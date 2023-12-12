@@ -4,7 +4,6 @@ function getIndexsForPalindrome(word) {
     return []
   } else {
     // It is not palindrome, check for potential swap
-    const swaps = []
     for (let i = 0; i < word.length - 1; i++) {
       // Check for potential swaps
       for (let j = i + 1; j < word.length; j++) {
