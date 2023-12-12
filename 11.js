@@ -13,10 +13,10 @@ function getIndexsForPalindrome(word) {
         tempWordArr[i] = tempWordArr[j]
         tempWordArr[j] = charAux
         if (tempWordArr.join('') === tempWordArr.reverse().join('')) {
-          swaps.push([i, j])
+          return [i, j]
         }  
       }
     }
-    return swaps.length > 0 ? swaps[0] : null
+    return null
   }
 }
